@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Exo+2&family=Gotu&family=Permanent+Marker&family=Satisfy&family=Ubuntu:wght@300;400&display=swap");
+.primary {
+  color: #EA2328; }
+
+.secondary {
+  color: #fcfcfc; }
+
+.dark {
+  color: #333; }
+
+.light {
+  color: #fff; }
+
+.btn {
+  padding: 0.7rem 2.7rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.3s ease; }
+
+.btn-primary {
+  background: #EA2328;
+  color: #fcfcfc; }
+  .btn-primary:hover {
+    background: #f1696c; }
+
+.btn-secondary {
+  background: #fcfcfc;
+  color: #333; }
+  .btn-secondary:hover {
+    background: #EA2328; }
+
+.btn-dark {
+  background: #333;
+  color: #fff; }
+  .btn-dark:hover {
+    background: #595959; }
+
+.btn-light {
+  background: #fff;
+  color: #333; }
+  .btn-light:hover {
+    background: #d9d9d9; }
+
+.btn-alternate {
+  background: transparent;
+  color: #fff;
+  border-radius: 0;
+  border: 2px solid #fff; }
+  .btn-alternate:hover {
+    background: #EA2328;
+    border: 2px solid transparent; }
+
+@font-face {
+  src: url(../fonts/AvengeroRegular-zvgl.ttf);
+  font-family: avenger; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+ul {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding-bottom: 1rem; }
+
+p {
+  padding-bottom: 0.6rem; }
+
+.current {
+  background: #EA2328;
+  color: #fcfcfc;
+  border-radius: 9px;
+  border: none; }
+
+.logo {
+  height: 150px;
+  width: 230px; }
+
+.text-primary {
+  color: #EA2328; }
+
+.avenger {
+  font-family: avenger; }
+
+img {
+  height: 200px;
+  width: 250px; }
+
+.big {
+  font-size: 1.5rem; }
+
+.main-head {
+  font-size: 2rem;
+  padding-bottom: 1rem; }
+
+.sub-head {
+  font-size: 1.5rem; }
+
+.lead {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem; }
+
+.container {
+  height: 100%;
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 0.4rem; }
+
+.box {
+  background: #fcfcfc;
+  padding: 0.6rem;
+  border-radius: 8px; }
+
+html body {
+  font-family: "Baloo Paaji 2", san-serif;
+  line-height: 1.4;
+  background: #e6e6e6; }
+  html body #marvel-showcase {
+    height: 100vh;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 12px gray; }
+    html body #marvel-showcase:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: url("../img/spiderman.jpg") no-repeat center center/cover;
+      z-index: -1; }
+    html body #marvel-showcase .container #navbar {
+      display: grid;
+      grid-template-columns: 2fr 1fr 0.3fr;
+      align-items: center; }
+      html body #marvel-showcase .container #navbar ul {
+        display: flex;
+        flex-direction: row; }
+        html body #marvel-showcase .container #navbar ul li {
+          padding-right: 1rem; }
+          html body #marvel-showcase .container #navbar ul li a {
+            font-size: 1.2rem;
+            color: #fff;
+            padding: 0.4rem 0.5rem;
+            border-bottom: 3px solid transparent;
+            transition: border 0.3s ease; }
+            html body #marvel-showcase .container #navbar ul li a:hover {
+              border-bottom: 3px solid #EA2328; }
+      html body #marvel-showcase .container #navbar .search {
+        border: none;
+        padding: 0.6rem 0.4rem;
+        border-radius: 8px; }
+        html body #marvel-showcase .container #navbar .search:focus {
+          outline-width: 0; }
+    html body #marvel-showcase .container .marvel-content {
+      margin-top: 6rem;
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+  html body #news-box {
+    margin-top: 1rem; }
+    html body #news-box .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 0.5rem; }
+      html body #news-box .container .headlines {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.5rem; }
+        html body #news-box .container .headlines .box img {
+          height: 150px;
+          width: 250px; }
+      html body #news-box .container .latest-news .box {
+        background: linear-gradient(45deg, #333, #666666);
+        color: #fcfcfc; }
+        html body #news-box .container .latest-news .box ul li {
+          border-bottom: 1px solid #666666;
+          margin-top: 0.6rem;
+          padding-bottom: 1rem; }
+          html body #news-box .container .latest-news .box ul li p {
+            display: inline; }
+  html body #other-box .container .box-contain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+    background: #EA2328;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px; }
+    html body #other-box .container .box-contain .box {
+      text-align: center;
+      position: relative; }
+      html body #other-box .container .box-contain .box .sub-head {
+        margin-top: 0.5rem; }
+      html body #other-box .container .box-contain .box .img-box {
+        overflow: hidden; }
+      html body #other-box .container .box-contain .box img {
+        height: 220px;
+        transition: transform 1s; }
+      html body #other-box .container .box-contain .box .overlay {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.7);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scaleY(0);
+        transition: transform 0.3s; }
+      html body #other-box .container .box-contain .box:hover .overlay {
+        transform: scaleY(1); }
+  html body #main-footer {
+    background: #333;
+    color: #cccccc;
+    padding: 1rem;
+    margin-top: 1rem; }
+    html body #main-footer .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem; }
+      html body #main-footer .container .card .sub-sub-head {
+        border-bottom: 2px solid #fcfcfc;
+        padding-bottom: 1rem; }
+      html body #main-footer .container .card .sub-lead {
+        padding-top: 0.5rem;
+        text-align: center; }
+      html body #main-footer .container .card ul li a {
+        color: #cccccc;
+        display: block;
+        margin-top: 0.6rem;
+        transition: color 0.3s ease; }
+        html body #main-footer .container .card ul li a:hover {
+          color: #fff; }
+      html body #main-footer .container p.sub-lead {
+        grid-column: 1/span 3;
+        text-align: center; }
