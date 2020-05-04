@@ -136,7 +136,7 @@ html body {
       z-index: -1; }
     html body #marvel-showcase .container #navbar {
       display: grid;
-      grid-template-columns: 2fr 1fr 0.3fr;
+      grid-template-columns: 2fr 1fr 1fr;
       align-items: center; }
       html body #marvel-showcase .container #navbar ul {
         display: flex;
@@ -151,12 +151,36 @@ html body {
             transition: border 0.3s ease; }
             html body #marvel-showcase .container #navbar ul li a:hover {
               border-bottom: 3px solid #EA2328; }
-      html body #marvel-showcase .container #navbar .search {
-        border: none;
-        padding: 0.6rem 0.4rem;
-        border-radius: 8px; }
-        html body #marvel-showcase .container #navbar .search:focus {
-          outline-width: 0; }
+      html body #marvel-showcase .container #navbar .search-box {
+        position: relative;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 0.7rem;
+        border-radius: 40px;
+        border: 2px solid #EA2328; }
+        html body #marvel-showcase .container #navbar .search-box .search {
+          border: none;
+          outline: 0;
+          background: #fff;
+          line-height: 3;
+          float: left;
+          padding: 0 0.5rem;
+          color: #333;
+          border-radius: 40px; }
+        html body #marvel-showcase .container #navbar .search-box .search-btn {
+          background: orange;
+          height: 40px;
+          width: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          float: right;
+          border-radius: 50%;
+          background: #EA2328;
+          color: #fff;
+          transition: all 0.3s ease; }
+          html body #marvel-showcase .container #navbar .search-box .search-btn:hover {
+            background: #fff;
+            color: #EA2328; }
     html body #marvel-showcase .container .marvel-content {
       margin-top: 6rem;
       max-width: 50%;
