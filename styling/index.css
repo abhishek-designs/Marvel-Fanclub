@@ -177,6 +177,7 @@ html body {
           border-radius: 50%;
           background: #EA2328;
           color: #fff;
+          font-family: "Baloo Paaji 2", san-serif;
           transition: all 0.3s ease; }
           html body #marvel-showcase .container #navbar .search-box .search-btn:hover {
             background: #fff;

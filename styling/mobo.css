@@ -145,6 +145,7 @@ html body #marvel-showcase .container #navbar {
       padding: 0;
       color: #333;
       border-radius: 40px;
+      font-family: "Baloo Paaji 2", san-serif;
       transition: all 0.3s ease; }
     html body #marvel-showcase .container #navbar .search-box .search-btn {
       background: orange;
